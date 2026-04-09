@@ -1,0 +1,1 @@
+# Django Multi-currency ERP with the following feature Point of Sale (PoS), Inventory Management
