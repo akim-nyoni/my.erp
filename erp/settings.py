@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # Project apps
     'accounts',
+    'dashboard',
 ]
 
 MIDDLEWARE = [
@@ -118,3 +119,10 @@ STATIC_URL = 'static/'
 STATICFILES_DIRS = [
     BASE_DIR / "static",
 ]
+
+#redirect unautheticated users
+LOGIN_URL = '/accounts/login/'
+
+#cookie management
+SESSION_COOKIE_AGE = 10  # 10 sec
+SESSION_EXPIRE_AT_BROWSER_CLOSE = False
